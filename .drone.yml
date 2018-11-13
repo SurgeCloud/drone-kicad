@@ -26,8 +26,6 @@ pipeline:
     tags: [latest]
     when:
       branch: master
-      event: deployment
-      environment: production
     secrets: [docker_username, docker_password]
 
   publish-test:
