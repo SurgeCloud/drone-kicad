@@ -22,8 +22,8 @@ pipeline:
 
   publish:
     image: plugins/docker
-    repo: toroid/drone-kicad
-    tags: [latest, 0.5.4]
+    repo: surgecloud/drone-kicad
+    tags: [latest]
     when:
       branch: master
       event: deployment
@@ -32,7 +32,7 @@ pipeline:
 
   publish-test:
     image: plugins/docker
-    repo: toroid/drone-kicad
+    repo: surgecloud/drone-kicad
     tags: ${DRONE_DEPLOY_TO}
     when:
       event: deployment
