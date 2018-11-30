@@ -22,13 +22,8 @@ pipeline:
 
   publish:
     image: plugins/docker
-<<<<<<< HEAD
     repo: surgecloud/drone-kicad
     tags: [latest]
-=======
-    repo: toroid/drone-kicad
-    tags: [latest, 0.5.5]
->>>>>>> upstream/master
     when:
       branch: master
     secrets: [docker_username, docker_password]
